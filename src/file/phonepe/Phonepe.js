@@ -15,10 +15,10 @@ const Phonepe = () => {
         transactionId: 'T' + Date.now(),
     }
  
-    const handlePayment = (e)=>{
+    const handlePayment = async (e)=>{
         e.preventDefault();
         setLoading2(true);
-        axios.post('api/payment', {...data}).then(res => {  
+        await axios.post('api/payment', {...data}).then(res => {  
         setTimeout(() => {
             setLoading2(false);
         }, 1500);
