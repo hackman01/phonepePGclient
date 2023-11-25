@@ -47,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://phonepepgserver.onrender.com:5000"
+  "proxy": "https://phonepepgserver.onrender.com/"
 }
