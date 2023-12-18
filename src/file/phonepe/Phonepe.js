@@ -23,7 +23,7 @@ const Phonepe = () => {
             setLoading2(false);
         }, 1500);
         
-        console.log(res);
+        window.location.replace(res.data);
         
         })
         .catch(error => {
