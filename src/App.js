@@ -1,12 +1,12 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Success from './component/Success';
 import Failure from './component/Failure';
 import Phonepe from './file/phonepe/Phonepe';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='main'>
         <Routes>
           <Route exact path='/' element={<Phonepe />} />
@@ -14,7 +14,7 @@ function App() {
           <Route exact path='/failure' element={<Failure />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
